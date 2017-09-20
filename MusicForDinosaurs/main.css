@@ -1,0 +1,83 @@
+
+
+/* Color Pallete */
+/* 
+  #FAEA96
+  #D0E09A
+  #CCBC88
+  #EB4C16
+  #455446
+ */
+
+/* Universal Selector */
+* {
+  font-family: Geneva, Tahoma, sans-serif;
+}
+
+/* Element Selector */
+body {
+  background-color: #FAEA96;
+  margin: 0;
+}
+
+header {
+  display: flex;
+  background-color: #FFF;
+  border-bottom: 2px solid #D0E09A;
+}
+
+/* Class Selector */
+.header__logo-container {
+  display: flex;
+  background-color: #FFF;
+  align-items: center;
+  padding: 10px 0;
+}
+
+/* Descendant Selector */
+header nav {
+  margin-left: 100px;
+}
+
+header nav.header__nav {
+  display: flex;
+  align-items: center;
+}
+
+header .header__logo-container a {
+  text-decoration: none;
+}
+
+header nav.header__nav ul {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+header nav.header__nav ul li {
+  display: flex;
+  align-items: center;
+  margin: 0 20px;
+  padding: 0 10px;
+  font-size: 24px;
+  font-weight: 600;
+  height: 100%;
+}
+
+nav.header__nav ul li a {
+  color: #455446;
+  text-decoration: none;
+  transition: color 0.2s ease-in-out;
+}
+
+nav.header__nav ul li a:hover {
+  color: #EB4C16;
+}
+
+.header__logo-container h1{
+  margin: 0 0 0 20px;
+  color: #EB4C16;
+}
