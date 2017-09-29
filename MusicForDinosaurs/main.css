@@ -115,6 +115,9 @@ footer nav ul li a {
 }
 
 /* Font Stuff */
+p {
+  text-indent: 2em;
+}
 
 /* Positioning Stuff */
 .main-content__rocking-dino-img {
