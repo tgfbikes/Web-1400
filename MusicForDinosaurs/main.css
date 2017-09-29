@@ -15,6 +15,7 @@
 }
 
 /* Element Selector */
+
 body {
   background-color: #FAEA96;
   margin: 0;
@@ -22,21 +23,36 @@ body {
 
 header {
   display: flex;
+  justify-content: space-between;
   background-color: #FFF;
   border-bottom: 2px solid #D0E09A;
+}
+
+main {
+  margin: 120px 12em 0;
+}
+
+p {
+  line-height: 25px;
+}
+
+footer {
+  background-color: #FFF;
+  padding: 1em 12em;
 }
 
 /* Class Selector */
 .header__logo-container {
   display: flex;
-  background-color: #FFF;
+  background: linear-gradient(90deg, #CCBC88, #FFF, #FFF 80%);
   align-items: center;
   padding: 10px 0;
+  padding-left: 12em;
 }
 
 /* Descendant Selector */
 header nav {
-  margin-left: 100px;
+  margin-right: 12em;
 }
 
 header nav.header__nav {
@@ -80,4 +96,38 @@ nav.header__nav ul li a:hover {
 .header__logo-container h1{
   margin: 0 0 0 20px;
   color: #EB4C16;
+}
+
+footer nav ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+footer nav ul li {
+  display: inline-block;
+  margin-right: 2em;
+}
+
+footer nav ul li a {
+  text-decoration: none;
+  color: #EB4C16;
+}
+
+/* Font Stuff */
+
+/* Positioning Stuff */
+.main-content__rocking-dino-img {
+  float: right;
+}
+
+.main-content__section--clear-left {
+  clear: right;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
 }
